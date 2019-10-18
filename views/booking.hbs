@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking</title>
+    </head>
+    <body>
+        <form action="/booked" method="POST" name="booking">
+            <label>Customer name: <input type="text" name="cust_name"></label><br>
+            <label>Mobile: <input type="number" name="mobile"></label><br>
+            <label>Issue date: <input type="time" name="issue"></label><br>
+            <label>Return date: <input type="time" name="return"></label><br>
+            <label>Car:
+                    {{# each items }}
+                        <input type="radio" value={{this.vehicle_num}} name="car">{{this.model}}</input><br>
+                    {{/each}}
+                
+            <label><input type="submit" name="submit" value="Book your car"></label>
+        </form>
+    </body>
+</html>

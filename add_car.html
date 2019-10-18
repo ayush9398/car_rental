@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Cars</title>
+    </head>
+    <body>
+        <form action='/car_added' method="POST" name="add_cars">
+            <label>Vehicle number: <input type="number" name="vehicle_num"></label>
+            <label>Model: <input type="text" name="model"></label>
+            <label>Seating Capacity: <input type="number" name="capacity"></label>
+            <label>Rent per day: Rs.<input type="number" name="rent"></label>
+            <label>Available: 
+                <input type="radio" value="Yes" name="available">Yes</input>
+                <input type="radio" value="No" name="available">No</input>
+            </label>
+            </label>
+            <label><input type="submit" name="submit" value="Add Car"></label>
+        </form>
+    </body>
+</html>
